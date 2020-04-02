@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Переиещение фигур</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Style.css">
+  </head>
+  <body>
+    <main > <!--контейнер ,нужен для группировки объектов-->
+      <form > <!--внутри формы элементы-->
+        <h3>Начальная точка фигуры</h3>
+        <select id="fig">
+  <option value="KON">Конь</option>
+  <option value='LAD' >Ладья</option>
+  <option value="SL">Слон</option>
+  <option value="FER">Ферзь</option>
+  <option value="KOR">Король</option>
+</select> <!--написать select для разных скриптов-->
+     <output id="data" name="data" ></output>
+  
+        <h3>Возможные перемещения фигуры</h3>
+     <input id="res" readonly >
+
+      
+      </form>
+    </main>
+    <div class="box">
+      <div class="centered">
+    
+      <table class="chess-board">
+       <tbody>
+        <tr>
+         <th></th>
+         <th>a</th>
+         <th>b</th>
+         <th>c</th>
+         <th>d</th>
+         <th>e</th>
+         <th>f</th>
+         <th>g</th>
+         <th>h</th>
+        </tr>
+        <tr>
+         <th>8</th>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='a8' ,CHESS()"  ><output class="out" id="a8"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='b8' ,CHESS()" ><output class="out" id="b8"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='c8' ,CHESS()" ><output class="out" id="c8"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='d8' ,CHESS()" ><output class="out" id="d8"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='e8' ,CHESS()" ><output class="out" id="e8"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='f8' ,CHESS()" ><output class="out" id="f8"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='g8' ,CHESS()" ><output class="out" id="g8"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='h8' ,CHESS()" ><output class="out" id="h8"></output></button></td>
+        </tr>
+        <tr>
+         <th>7</th>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='a7' ,CHESS()" ><output class="out" id="a7">	</output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='b7' ,CHESS()" ><output class="out" id="b7"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='c7' ,CHESS()" ><output class="out" id="c7"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='d7' ,CHESS()" ><output class="out" id="d7"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='e7' ,CHESS()" ><output class="out" id="e7"></output></button></td>
+         <td class="white" ><button class="white"onclick="document.getElementById('data').value='f7' ,CHESS()" ><output class="out" id="f7"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='g7' ,CHESS()" ><output class="out" id="g7"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='h7' ,CHESS()" ><output class="out" id="h7"></output></button></td>
+        </tr>
+        <tr>
+         <th>6</th>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='a6' ,CHESS()" ><output class="out" id="a6"></output></button></td>
+         <td class="black" ><button class="black"  onclick="document.getElementById('data').value='b6' ,CHESS()" ><output class="out" id="b6"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='c6' ,CHESS()" ><output class="out" id="c6"></output></button></td>
+         <td class="black" ><button class="black"  onclick="document.getElementById('data').value='d6' ,CHESS()" ><output class="out" id="d6"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='e6' ,CHESS()" ><output class="out" id="e6"></output></button></td>
+         <td class="black" ><button class="black"  onclick="document.getElementById('data').value='f6' ,CHESS()" ><output class="out" id="f6"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='g6' ,CHESS()" ><output class="out" id="g6"></output></button></td>
+         <td class="black" ><button class="black"  onclick="document.getElementById('data').value='h6' ,CHESS()" ><output class="out" id="h6"></output></button></td>
+        </tr>
+        <tr>
+         <th>5</th>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='a5' ,CHESS()" ><output class="out" id="a5"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='b5' ,CHESS()" ><output class="out" id="b5"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='c5' ,CHESS()" ><output class="out" id="c5"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='d5' ,CHESS()" ><output class="out" id="d5"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='e5' ,CHESS()" ><output class="out" id="e5"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='f5' ,CHESS()" ><output class="out" id="f5"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='g5' ,CHESS()" ><output class="out" id="g5"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='h5' ,CHESS()" ><output class="out" id="h5"></output></button></td>
+        </tr>
+        <tr>
+         <th>4</th>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='a4' ,CHESS()" ><output class="out" id="a4"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='b4' ,CHESS()" ><output class="out" id="b4"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='c4' ,CHESS()" ><output class="out" id="c4"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='d4' ,CHESS()" ><output class="out" id="d4"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='e4' ,CHESS()" ><output class="out" id="e4"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='f4' ,CHESS()" ><output class="out" id="f4"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='g4' ,CHESS()" ><output class="out" id="g4"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='h4' ,CHESS()" ><output class="out" id="h4"></output></button></td>
+        </tr>
+        <tr>
+         <th>3</th>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='a3' ,CHESS()" ><output class="out" id="a3"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='b3' ,CHESS()" ><output class="out" id="b3"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='c3' ,CHESS()" ><output class="out" id="c3"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='d3' ,CHESS()" ><output class="out" id="d3"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='e3' ,CHESS()" ><output class="out" id="e3"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='f3' ,CHESS()" ><output class="out" id="f3"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='g3' ,CHESS()" ><output class="out" id="g3"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='h3' ,CHESS()" ><output  class="out" id="h3"></output></button></td>
+        </tr>
+        <tr>
+         <th>2</th>
+         <td class="white"><button class="white" onclick="document.getElementById('data').value='a2' ,CHESS()" ><output class="out" id="a2"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='b2' ,CHESS()" ><output class="out" id="b2"></output></button></td>
+         <td class="white"><button class="white" onclick="document.getElementById('data').value='c2' ,CHESS()" ><output class="out" id="c2"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='d2' ,CHESS()" ><output class="out" id="d2"></output></button></td>
+         <td class="white"><button class="white" onclick="document.getElementById('data').value='e2' ,CHESS()" ><output class="out" id="e2"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='f2' ,CHESS()" ><output class="out" id="f2"></output></button></td>
+         <td class="white"><button class="white" onclick="document.getElementById('data').value='g2' ,CHESS()" ><output class="out" id="g2"></output></button></td>
+         <td class="black"><button class="black" onclick="document.getElementById('data').value='h2' ,CHESS()" ><output class="out" id="h2"></output></button></td>
+        </tr>
+        <tr>
+         <th>1</th>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='a1' ,CHESS()" ><output class="out" id="a1"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='b1' ,CHESS()" ><output class="out" id="b1"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='c1' ,CHESS()" ><output class="out" id="c1"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='d1' ,CHESS()" ><output class="out" id="d1"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='e1' ,CHESS()" ><output class="out" id="e1"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='f1' ,CHESS()" ><output class="out" id="f1"></output></button></td>
+         <td class="black" ><button class="black" onclick="document.getElementById('data').value='g1' ,CHESS()" ><output class="out" id="g1"></output></button></td>
+         <td class="white" ><button class="white" onclick="document.getElementById('data').value='h1' ,CHESS()" ><output class="out" id="h1"></output></button></td>
+        </tr>
+       </tbody>
+      </table>
+    
+      </div>
+     </div>
+     <output id="img">	&#9989;</output><!--поле с которого вытягивает иконка-->
+     <output id='check'>&#9745;</output>
+    
+    <script id="CHESS" src="CHESS.js">
+
+    </script>
+
+  
+  </body>
+</html>
