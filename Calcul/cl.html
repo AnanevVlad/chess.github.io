@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <section id="all">
+    
+          
+    <section id='ex'><input id="calc" readonly></input></section>
+   
+        
+          <div id="tool">
+              <button type="button" onclick="document.getElementById('calc').value+=7" class="but" >7</button>
+              <button type="button" onclick="document.getElementById('calc').value+=8"class="but" >8</button>
+              <button type="button" onclick="document.getElementById('calc').value+=9"class="but" >9</button>
+              <button type="button"  value="/" id="dv"  onclick="dv()" class="but" >&divide</button>
+              <br><br>
+              <button type="button" onclick="document.getElementById('calc').value+=4" class="but" >4</button>
+              <button type="button" onclick="document.getElementById('calc').value+=5" class="but" >5</button>
+              <button type="button" onclick="document.getElementById('calc').value+=6"  class="but">6</button>
+              <button type="button" value="*" id="mn"  onclick="mn()" class="but" >x</button>
+              <button type="button" value="-" id="minus"  onclick="minus()" class="but" >-</button>
+             <br><br>
+             <button type="button" onclick="document.getElementById('calc').value+=1"  class="but">1</button>
+             <button type="button" onclick="document.getElementById('calc').value+=2" class="but" >2</button>
+             <button type="button" onclick="document.getElementById('calc').value+=3" class="but" >3</button>
+             <button type="button" value="+" id="pluss"  onclick="plus()"  class="but"  >+</button>
+             <button type="button" onclick="document.getElementById('calc').value=''" class="but" >C</button>
+             <br><br>
+             <button type="button" onclick="document.getElementById('calc').value+=0" class="but" >0</button>
+             <button type="button" onclick="document.getElementById('calc').value+='00'"  class="but">00</button>
+             <button type="button" onclick="document.getElementById('calc').value+= '.'" class="but" >.</button>
+             <button type="button" onclick="res()" class="but" >=</button>
+             
+            
+
+
+          </div>
+        </section>
+        </main>
+        <script src="calc.js">
+
+        </script>
+    
+      
+    </body>
+</html>

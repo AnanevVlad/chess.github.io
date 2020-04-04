@@ -1,1 +1,0 @@
-# AnanevVlad.github.io
