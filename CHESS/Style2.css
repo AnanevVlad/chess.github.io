@@ -1,5 +1,5 @@
 body{
-   background: deepskyblue;
+    background: linear-gradient(80deg,pink,#73e8ec);
 }
 main{
 background: linear-gradient(45deg,rgb(238, 218, 131),rgb(173, 76, 31));
@@ -85,7 +85,7 @@ color: indigo;
       background-image: url(Image/1.jpg);
       width: 372px;
       height: 74px;
-      margin-left: 300px;
+      margin-left: 650px;
       margin-top: 20px;
 
   }
