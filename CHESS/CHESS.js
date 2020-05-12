@@ -19,10 +19,10 @@ g.push(tower[6]+line[i])
 h.push(tower[7]+line[i])
 
 }
-tabel=[a,b,c,d,e,f,g,h]
+tabel=[a,b,c,d,e,f,g,h] //Генерация доски
 
-var pos =document.getElementById("data").value //получение значения с инпута в хтамл
-var fig=document.getElementById("fig").value
+var pos =document.getElementById("data").value //получение значения с инпута в хтамл(позиции)
+var fig=document.getElementById("fig").value //получение значения фигуры
 
 
 for(i =0;i<tabel.length;i++){
