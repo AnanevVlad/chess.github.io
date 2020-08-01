@@ -45,6 +45,10 @@ footer {
     margin-top: 24px;
 }
 
+.user {
+    margin: 16px 16px 0 0;
+}
+
 .button {
     color: white;
     font-family: 'Pacifico', cursive;
@@ -52,49 +56,45 @@ footer {
     text-decoration: none;
     padding: .5em 2em;
     outline: none;
-    border-width: 2px 0;
+    border: none;
     border-style: solid none;
     border-radius: 6px;
     align-self: center;
+    margin: 8px 0 0 8px;
+}
+
+.button:active {
+    border: none;
 }
 
 #log {
-    border-color: #d533fd #000 #d706cd;
-    background: linear-gradient(#e00ff3, #e316e3) #cb16e3;
-}
-
-#log:hover {
-    background: linear-gradient(#d800f5, #cc00f5) #c400f5;
+    background-color: oldlace;
+    color: rgb(100, 49, 13);
 }
 
 #log:active {
-    background: linear-gradient(#c400f5, #e100f5) #cc00f5;
+    background-color: rgb(100, 49, 13);
+    color: oldlace;
 }
 
 #nwa {
-    border-color: #3633fd #000 #1406d7;
-    background: linear-gradient(#130ff3, #2b16e3) #3516e3;
-}
-
-#nwa:hover {
-    background: linear-gradient(#007ff5, #004ef5) #3500f5;
+    background-color: oldlace;
+    color: rgb(100, 49, 13);
 }
 
 #nwa:active {
-    background: linear-gradient(#006af5, #0400f5) #4ef500;
+    background-color: rgb(100, 49, 13);
+    color: oldlace;
 }
 
 #home {
-    border-color: #4bfd33 #000 #41d706;
-    background: linear-gradient(#3df30f, #57e316) #16e320;
-}
-
-#home:hover {
-    background: linear-gradient(#258b05, #31ca02) #27c200;
+    background-color: oldlace;
+    color: rgb(100, 49, 13);
 }
 
 #home:active {
-    background: linear-gradient(#1f8500, #41ca02) #26bd00;
+    background-color: rgb(100, 49, 13);
+    color: oldlace;
 }
 
 .anc {
