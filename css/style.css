@@ -252,6 +252,8 @@ margin-right: 5%;
   margin-top: 2%;
   margin-bottom: 2%;
   height: 20%;
+  border-radius: 90px;
+  box-shadow: 0 0 0 3px green, 0 0 13px #333; 
 }
 .bdtt{
   font-size: xx-large;
@@ -329,6 +331,8 @@ h5{font-size: larger;}
   width: 50%;
   height: 3%;
   margin-bottom: 2%;
+  border-radius: 90px;
+  box-shadow: 0 0 0 3px green, 0 0 13px #333; 
  
 }
 .search{
