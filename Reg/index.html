@@ -1,104 +1,109 @@
 <!DOCTYPE html>
 <html>
-  
-    <head>
-        <meta charset="utf-8">
-        <meta lang="eng">
-        <title>Chocolate dating</title>
-        <link rel="shortcut icon" href="../img/robinweatherall-chocolate-chocolate-heart.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rowdies&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
-        
-    </head>
-    <body>
-        <header>
-<h1>
-    Chocolate dating
-</h1>
-<div class="user">
-<button onclick="document.location='../index.html'" class="button" id='home'>Home</button>
-<button onclick="document.location='../log/index.html'" class="button" id="log">Login</button>
-</div>
+
+<head>
+    <meta charset="utf-8">
+    <meta lang="eng">
+    <title>Chocolate dating</title>
+    <link rel="shortcut icon" href="../img/robinweatherall-chocolate-chocolate-heart.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Chocolate dating
+        </h1>
+        <div class="user">
+            <button onclick="document.location='../index.html'" class="button" id='home'>Home</button>
+            <button onclick="document.location='../log/index.html'" class="button" id="log">Login</button>
+        </div>
     </header>
 
-        <main class="content">
-          <div class="logreg">
+    <main class="content">
+        <div class="logreg">
             <h2>Registration:</h2>
             <ul>
-              <li><h3 id="li">My gender:</h3><select class="valid">
-                <option>Male</option>
-                <option>Female</option>
-              </select> </li>
-              <li><h3 id="li">Im looking for:</h3>
-              <select class="valid">
-                <option class="valid">Male</option>
-                <option >Female</option>
-              </select></li>
+                <li>
+                    <h3 id="li">My gender:</h3><select class="valid">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+                </li>
+                <li>
+                    <h3 id="li">Im looking for:</h3>
+                    <select class="valid">
+            <option class="valid">Male</option>
+            <option>Female</option>
+          </select>
+                </li>
             </ul>
             <input name="email" class="valid" placeholder="Enter Email">
-            <form name="ValidationForm" >
-              <p> <input type="password" class="valid" id="password1" placeholder="Enter password" /></p>
-              <p> <input type="password" class="valid" id="password2" placeholder="Confirm password"/></p>
-              <p><input class="anc" class="valid" type="submit" value="submit"/></p>
-          </form>
-          </div>
-         
-            </main>
-       <footer>
-           <div class=foot>
-               ABOUT US:<br>
-               Help<br>
-               Terms & Conditions<br>
-            Code of Conduct<br>
-            Privacy<br>
-             Customer Care<br>
-              Press
-           </div>
-         
-             <div id='foot' class=foot>
-                 FOLLOW US:
-                 <p>
-            <a href="https://twitter.com/"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/></a>
-            <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png"/></a>
-                <a href=https://plus.google.com> <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png"/></p></a>
-             </div>
-             <a id="button"></a>
-             <h6>© 2009-2020 Spark Networks Services GmbH</h6>
-       </footer>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-       <script> 
+            <form name="ValidationForm">
+                <p> <input type="password" class="valid" id="password1" placeholder="Enter password" /></p>
+                <p> <input type="password" class="valid" id="password2" placeholder="Confirm password" /></p>
+                <p><input class="anc" class="valid" type="submit" value="submit" /></p>
+            </form>
+        </div>
 
+    </main>
+    <footer>
+        <div class=foot>
+            ABOUT US:<br> Help
+            <br> Terms & Conditions<br> Code of Conduct<br> Privacy
+            <br> Customer Care<br> Press
+        </div>
+
+        <div id='foot' class=foot>
+            FOLLOW US:
+            <p>
+                <a href="https://twitter.com/"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" /></a>
+                <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" /></a>
+                <a href=https://plus.google.com> <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" /></p>
+            </a>
+        </div>
+        <a id="button"></a>
+        <h6>© 2009-2020 Spark Networks Services GmbH</h6>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
         jQuery(document).ready(function() {
-          var btn = $('#button');  
-          $(window).scroll(function() {     
-            if ($(window).scrollTop() > 300) {
-               btn.addClass('show');
-             } else {
-               btn.removeClass('show');
-             }
-           });
-           btn.on('click', function(e) {
-             e.preventDefault();
-             $('html, body').animate({scrollTop:0}, '300');
-           });
+            var btn = $('#button');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    btn.addClass('show');
+                } else {
+                    btn.removeClass('show');
+                }
+            });
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
         });
-        </script> 
-        <script type="text/javascript">
-          window.onload = function () {
-              document.getElementById("password1").onchange = validatePassword;
-              document.getElementById("password2").onchange = validatePassword;
-          }
-          function validatePassword(){
-          var pass2=document.getElementById("password2").value;
-          var pass1=document.getElementById("password1").value;
-          if(pass1!=pass2)
-              document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-          else
-              document.getElementById("password2").setCustomValidity('');
-         
-          }
-          </script>
-    </body>
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+
+        }
+    </script>
+</body>
+
 </html>
