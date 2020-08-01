@@ -304,9 +304,7 @@ margin-right: 5%;
     font-size: x-large;
     
   }
-  header{
-    height: 20%;
-  }
+ 
   h1{
     align-self: center;
 
@@ -314,7 +312,7 @@ margin-right: 5%;
   }
   
   .nav{
-    height: 10%;
+    
    display: flex;
    align-items: center;
   }
@@ -385,9 +383,7 @@ h5{font-size: larger;}
     font-size: x-large;
     
   }
-  header{
-    height: 20%;
-  }
+  
   h1{
     align-self: center;
 
@@ -395,7 +391,7 @@ h5{font-size: larger;}
   }
   
   .nav{
-    height: 10%;
+    
    display: flex;
    align-items: center;
   }
@@ -471,9 +467,7 @@ and (orientation : landscape){
     font-size: x-large;
     
   }
-  header{
-    height: 20%;
-  }
+  
   h1{
     align-self: center;
 
@@ -481,7 +475,7 @@ and (orientation : landscape){
   }
   
   .nav{
-    height: 10%;
+   
    display: flex;
    align-items: center;
   }
@@ -555,9 +549,7 @@ and (orientation : landscape){
     font-size: x-large;
     
   }
-  header{
-    height: 20%;
-  }
+
   h1{
     align-self: center;
 
@@ -565,7 +557,7 @@ and (orientation : landscape){
   }
   
   .nav{
-    height: 10%;
+    
    display: flex;
    align-items: center;
   }
