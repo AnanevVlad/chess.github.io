@@ -241,7 +241,67 @@ margin-right: 5%;
   background:linear-gradient(rgb(100, 49, 13),rgba(82, 36, 3, 0.966))rgba(88, 40, 5, 0.966);
 }
 
+@media only screen and (max-width : 992px) { 
+
+  .cnt2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+   
+  }
+  .content{
+    flex-direction: column;
+    align-items:center;
+  }
+  .cnt2{
+    margin-bottom: 5%;
+  
+  }
+.imgc{
+  margin-top: 5%;
+  width: 300%;
+  display: flex;
+  
  
+}
+.cnt21{
+  flex-direction: column;
+  align-items: center;
+  
+}
+.cnt22{
+  flex-direction: column;
+  align-items: center;
+}
+.cnt23{
+  flex-direction: column;
+  align-items: center;}
+  .c{width: 200%;}
+  .button{
+    font-size: x-large;
+    
+  }
+  header{
+    height: 20%;
+  }
+  h1{
+    align-self: center;
+    margin-left: 40%;
+    font-size: 400%;
+  }
+  
+  .nav{
+    height: 10%;
+   display: flex;
+   align-items: center;
+  }
+  .anc{font-size: xx-large;}
+  #img1{
+    margin-right: 5%;
+    width: 500%;
+  }
+}
  
 
   
