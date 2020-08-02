@@ -26,13 +26,14 @@ h1 {
 
 nav {
     flex: 0 0 auto;
-    background: linear-gradient(rgb(100, 49, 13), rgba(82, 36, 3, 0.966))rgba(88, 40, 5, 0.966)
+    background: linear-gradient(rgb(100, 49, 13), rgba(82, 36, 3, 0.966))rgba(88, 40, 5, 0.966);
+    justify-content: space-between;
 }
 
 .content {
     flex: 1 0 auto;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 footer {
