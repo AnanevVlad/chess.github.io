@@ -24,7 +24,7 @@ h1 {
     margin-left: 10px;
 }
 
-.nav {
+nav {
     flex: 0 0 auto;
     background: linear-gradient(rgb(100, 49, 13), rgba(82, 36, 3, 0.966))rgba(88, 40, 5, 0.966)
 }
@@ -330,7 +330,7 @@ h5 {
         align-self: center;
         font-size: 400%;
     }
-    .nav {
+    nav {
         display: flex;
         align-items: center;
     }
@@ -402,7 +402,7 @@ h5 {
         align-self: center;
         font-size: 400%;
     }
-    .nav {
+    nav {
         display: flex;
         align-items: center;
     }
@@ -474,7 +474,7 @@ h5 {
         align-self: center;
         font-size: 400%;
     }
-    .nav {
+    nav {
         display: flex;
         align-items: center;
     }
@@ -546,7 +546,7 @@ h5 {
         align-self: center;
         font-size: 400%;
     }
-    .nav {
+    nav {
         display: flex;
         align-items: center;
     }
