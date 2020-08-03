@@ -290,6 +290,10 @@ h5 {
 }
 
 @media only screen and (max-width: 992px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
     .cnt2 {
         display: flex;
         justify-content: center;
@@ -362,6 +366,10 @@ h5 {
 }
 
 @media only screen and (max-width: 992px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
     .cnt2 {
         display: flex;
         justify-content: center;
@@ -434,6 +442,10 @@ h5 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
     .cnt2 {
         display: flex;
         justify-content: center;
@@ -506,6 +518,10 @@ h5 {
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
     .cnt2 {
         display: flex;
         justify-content: center;
